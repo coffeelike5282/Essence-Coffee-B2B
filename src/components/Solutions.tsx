@@ -5,10 +5,10 @@ export const Solutions: React.FC = () => {
     <section id="solutions" className="py-section-gap px-margin-mobile md:px-margin-desktop bg-background">
       <div className="max-w-container-max mx-auto space-y-stack-lg">
         <div className="text-center mb-16 space-y-2">
-          <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+          <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface break-keep">
             커피라이크 에센스 솔루션
           </h2>
-          <p className="font-body-lg text-body-lg text-primary-fixed tracking-wide">
+          <p className="font-body-lg text-body-lg text-primary-fixed tracking-wide break-keep">
             과학적인 추출로 완성하는 프리미엄 카페 비즈니스
           </p>
         </div>
@@ -22,7 +22,7 @@ export const Solutions: React.FC = () => {
             <h3 className="font-headline-md text-2xl text-on-surface mb-4 font-bold">
               압도적인 밸런스와 향
             </h3>
-            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed break-keep">
               거칠고 쓴 탄맛 대신 부드럽고 달콤하며, 원두 본연의 에센스만을 추출하여 깊고 풍부한 향미를 구현합니다.
             </p>
           </div>
@@ -35,7 +35,7 @@ export const Solutions: React.FC = () => {
             <h3 className="font-headline-md text-2xl text-on-surface mb-4 font-bold">
               무한한 메뉴 확장
             </h3>
-            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed break-keep">
               고농도 에센스를 베이스로 아메리카노부터 라떼, 아인슈페너까지 다양한 메뉴 라인업 구축이 가능합니다.
             </p>
           </div>
@@ -48,7 +48,7 @@ export const Solutions: React.FC = () => {
             <h3 className="font-headline-md text-2xl text-on-surface mb-4 font-bold">
               초고속 제조 (30초 서빙)
             </h3>
-            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed break-keep">
               선추출된 에센스를 활용하여 바쁜 피크타임에도 30초 만에 완벽한 퀄리티의 아메리카노를 제공합니다.
             </p>
           </div>

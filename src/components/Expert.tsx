@@ -12,14 +12,14 @@ export const Expert: React.FC = () => {
           />
         </div>
         <div className="w-full md:w-2/3 space-y-stack-md text-center md:text-left mt-8 md:mt-0">
-          <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight">
+          <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight break-keep">
             <span className="text-primary font-bold tracking-tight">iRhea</span> 브루잉 머신<br />
             에센스 추출 국내 최고 전문가
           </h2>
-          <p className="font-body-lg text-lg md:text-xl text-primary-fixed italic font-semibold pt-2">
+          <p className="font-body-lg text-lg md:text-xl text-primary-fixed italic font-semibold pt-2 break-keep">
             "저는 지난 6년간 매장에 에스프레소 머신을 단 한 대도 두지 않았습니다."
           </p>
-          <p className="font-body-md text-body-md text-on-surface-variant pt-4 max-w-2xl leading-relaxed">
+          <p className="font-body-md text-body-md text-on-surface-variant pt-4 max-w-2xl leading-relaxed break-keep">
             오직 iRhea 머신만을 연구하여 축적된 데이터와 노하우. 수백 번의 테스트를 거쳐 완성된 완벽한 에센스 추출 프로토콜을 통해 '실전 수율, 보관법, 매장 동선 노하우'를 전수합니다.
           </p>
         </div>

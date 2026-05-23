@@ -6,11 +6,11 @@ export const PainPoints: React.FC = () => {
       <div className="max-w-container-max mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div className="space-y-stack-lg">
-            <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight">
+            <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight break-keep">
               바쁜 피크타임,<br />
               <span className="text-secondary">브루잉 커피 주문</span>이 두려우신가요?
             </h2>
-            <ul className="space-y-stack-md font-body-lg text-body-lg text-on-surface-variant border-l-2 border-primary-container/50 pl-6 space-y-4">
+            <ul className="space-y-stack-md font-body-lg text-body-lg text-on-surface-variant border-l-2 border-primary-container/50 pl-6 space-y-4 break-keep">
               <li className="relative flex items-center gap-2">
                 <span className="text-error">✕</span> 주문 후 5~10분씩 걸리는 대기 시간...
               </li>
@@ -19,7 +19,7 @@ export const PainPoints: React.FC = () => {
               </li>
             </ul>
             <div className="p-6 bg-surface-container-highest rounded border border-primary-container/30 gold-glow transition-all duration-300 hover:border-primary-container/60">
-              <p className="font-body-lg text-body-lg text-primary-fixed font-bold">
+              <p className="font-body-lg text-body-lg text-primary-fixed font-bold break-keep">
                 이 모든 고민, '커피라이크 대용량 에센스 선추출'로 한 번에 해결할 수 있습니다.
               </p>
             </div>

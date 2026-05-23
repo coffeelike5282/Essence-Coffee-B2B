@@ -19,12 +19,12 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       </div>
       <div className="relative z-10 max-w-container-max mx-auto text-center space-y-stack-lg glass-panel p-8 md:p-16 rounded-xl gold-glow transition-transform duration-700 hover:scale-[1.01]">
-        <p className="font-body-lg text-body-lg text-secondary-fixed uppercase tracking-widest mb-4">
-          대표님의 <span className="text-primary font-semibold tracking-[0.1em]">iRhea 브루잉</span> 머신, 아직도 기다리는 브루잉 커피만 내리시나요?
+        <p className="font-body-lg text-body-lg text-secondary-fixed uppercase tracking-widest mb-4 break-keep">
+          대표님의 <span className="text-primary font-semibold tracking-[0.1em]">iRhea 브루잉</span> 머신,<br className="inline md:hidden" /> 아직도 기다리는 브루잉 커피만 내리시나요?
         </p>
-        <h1 className="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface max-w-4xl mx-auto leading-tight">
+        <h1 className="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface max-w-4xl mx-auto leading-tight break-keep">
           에스프레소 머신 없이 6년.<br />
-          <span className="tracking-[-0.02em]">iRhea의 </span>잠재력을 100% 끌어올릴<br />
+          <span className="tracking-[-0.02em]">iRhea의</span> 잠재력을 100% 끌어올릴<br className="hidden md:inline" />
           <span className="text-primary-container font-extrabold drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)]">
             에센스 원액 추출법
           </span>을 공개합니다.

@@ -73,7 +73,7 @@ export const ContactForm: React.FC = () => {
               task_alt
             </span>
             <h2 className="font-headline-md text-3xl font-bold text-on-surface">가이드 신청 완료!</h2>
-            <p className="font-body-md text-on-surface-variant max-w-md mx-auto leading-relaxed">
+            <p className="font-body-md text-on-surface-variant max-w-md mx-auto leading-relaxed break-keep">
               성공적으로 신청되었습니다. 입력하신 이메일(<strong className="text-primary">{formData.email}</strong>)로 
               <strong> [커피라이크 에센스 추출 세팅 값 &amp; 희석 비율 가이드]</strong>를 즉시 전송해드렸습니다.
             </p>
@@ -90,8 +90,8 @@ export const ContactForm: React.FC = () => {
         ) : (
           <>
             <div className="text-center mb-8 space-y-4">
-              <h2 className="font-headline-md text-headline-md text-on-surface font-bold">무료 가이드 신청</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              <h2 className="font-headline-md text-headline-md text-on-surface font-bold break-keep">무료 가이드 신청</h2>
+              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed break-keep">
                 지금 신청하시면 대표님의 매장에 바로 적용할 수 있는 <br />
                 <strong className="text-primary-fixed font-bold">[커피라이크 에센스 추출 세팅 값 &amp; 희석 비율 가이드]</strong>를 이메일로 지금 보내드립니다.
               </p>
