@@ -1,4 +1,4 @@
-import React from 'react';
+import painpointCoffee from '../assets/painpoint-coffee.jpg';
 
 export const PainPoints: React.FC = () => {
   return (
@@ -24,11 +24,13 @@ export const PainPoints: React.FC = () => {
               </p>
             </div>
           </div>
-          <div 
-            className="h-full min-h-[400px] bg-[url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80')] bg-cover bg-center rounded-xl relative opacity-85 shadow-2xl transition-all duration-500 hover:opacity-100"
-            style={{ minHeight: '400px' }}
-          >
-            <div className="absolute inset-0 bg-background/45 rounded-xl"></div>
+          <div className="w-full h-full min-h-[400px] rounded-xl relative shadow-2xl overflow-hidden border border-primary-container/20 hover:border-primary-container/50 gold-glow group">
+            <img 
+              src={painpointCoffee} 
+              alt="Premium Coffee Drink" 
+              className="absolute inset-0 w-full h-full object-cover sepia-[0.1] brightness-[0.88] contrast-[1.05] saturate-[1.05] group-hover:sepia-0 group-hover:brightness-100 transition-all duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/35 to-transparent mix-blend-multiply group-hover:opacity-0 transition-opacity duration-500" />
           </div>
         </div>
       </div>
