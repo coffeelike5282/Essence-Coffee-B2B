@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    background-color: #131313;
+    color: #e5e2e1;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+}
+
+.gold-glow {
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+.glass-panel {
+  background: rgba(42, 32, 26, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(200, 142, 90, 0.2);
+}
