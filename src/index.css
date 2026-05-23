@@ -6,6 +6,10 @@
     background-color: #131313;
     color: #e5e2e1;
     font-family: 'Noto Sans KR', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   }
 }
 
