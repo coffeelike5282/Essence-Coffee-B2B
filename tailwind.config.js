@@ -66,7 +66,7 @@ export default {
         "container-max": "1280px",
         "stack-sm": "8px",
         "margin-desktop": "80px",
-        "section-gap": "120px",
+        "section-gap": "60px",
         "margin-mobile": "20px",
         "gutter": "24px",
         "stack-md": "16px",
