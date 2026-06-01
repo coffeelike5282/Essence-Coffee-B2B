@@ -77,12 +77,27 @@ export const ContactForm: React.FC = () => {
               성공적으로 신청되었습니다. 입력하신 이메일(<strong className="text-primary">{formData.email}</strong>)로 
               <strong> [커피라이크 에센스 추출 세팅 값 &amp; 희석 비율 가이드]</strong>를 즉시 전송해드렸습니다.
             </p>
+            
+            <div className="py-4 max-w-md mx-auto">
+              <a 
+                href="/ireah_essence_coffee_regular_recipe.pdf" 
+                download="아이레아 에센스커피 레귤러 1cup 추출 레시피.pdf"
+                className="inline-flex items-center justify-center gap-2 w-full bg-primary-container text-on-primary-container font-label-md px-6 py-4 rounded-xl hover:scale-105 transition-all duration-300 font-bold border border-primary-container/40 hover:border-primary shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_25px_rgba(212,175,55,0.4)]"
+              >
+                <span className="material-symbols-outlined">download</span>
+                아이레아 전용 레귤러 1컵 추출 레시피 다운로드
+              </a>
+              <p className="text-xs text-on-surface-variant/60 mt-2">
+                * PDF 형식의 아이레아 공식 브루어 전용 레시피입니다.
+              </p>
+            </div>
+
             <button 
               onClick={() => {
                 setIsSubmitted(false);
                 setFormData({ companyName: '', name: '', phone: '', email: '', agreed: false });
               }}
-              className="bg-primary-container text-on-primary-container font-label-md px-6 py-2 rounded-full hover:scale-105 transition-all duration-300 font-semibold"
+              className="text-on-surface-variant/80 font-label-md px-6 py-2 rounded-full hover:text-on-surface hover:bg-surface-container/50 transition-all duration-300 text-sm"
             >
               새로 신청하기
             </button>
