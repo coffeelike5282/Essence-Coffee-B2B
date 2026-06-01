@@ -110,12 +110,26 @@ export const ContactForm: React.FC = () => {
               <strong> [커피라이크 에센스 커피 추출 가이드]</strong>를 즉시 전송해드렸습니다.
             </p>
 
+            <div className="py-6 max-w-md mx-auto">
+              <a 
+                href="/ireah_essence_coffee_regular_recipe.pdf" 
+                download="아이레아 에센스커피 레귤러 1cup 추출 레시피.pdf"
+                className="inline-flex items-center justify-center gap-2 w-full bg-primary-container text-on-primary-container font-label-md px-6 py-4 rounded-xl hover:scale-105 transition-all duration-300 font-bold border border-primary-container/40 hover:border-primary shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_25px_rgba(212,175,55,0.4)]"
+              >
+                <span className="material-symbols-outlined">download</span>
+                아이레아 전용 레시피 다운로드
+              </a>
+              <p className="text-xs text-on-surface-variant/60 mt-2">
+                * 이메일을 받지 못하셨다면 위 버튼을 클릭하여 즉시 다운로드하실 수 있습니다.
+              </p>
+            </div>
+
             <button 
               onClick={() => {
                 setIsSubmitted(false);
                 setFormData({ companyName: '', name: '', phone: '', email: '', agreed: false });
               }}
-              className="text-on-surface-variant/80 font-label-md px-6 py-2 rounded-full hover:text-on-surface hover:bg-surface-container/50 transition-all duration-300 text-sm mt-6"
+              className="text-on-surface-variant/80 font-label-md px-6 py-2 rounded-full hover:text-on-surface hover:bg-surface-container/50 transition-all duration-300 text-sm"
             >
               새로 신청하기
             </button>
@@ -126,7 +140,7 @@ export const ContactForm: React.FC = () => {
               <h2 className="font-headline-md text-headline-md text-on-surface font-bold break-keep">무료 가이드 신청</h2>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed break-keep">
                 지금 신청하시면 대표님의 매장에 바로 적용할 수 있는 <br />
-                <strong className="text-primary-fixed font-bold">[커피라이크 에센스 추출 세팅 값 &amp; 희석 비율 가이드]</strong>를 이메일로 지금 보내드립니다.
+                <strong className="text-primary-fixed font-bold">[커피라이크 에센스 커피 추출 가이드]</strong>를 이메일로 지금 보내드립니다.
               </p>
             </div>
             
@@ -180,6 +194,9 @@ export const ContactForm: React.FC = () => {
                   className={`w-full bg-surface-container border ${errors.email ? 'border-error' : 'border-outline-variant/30'} rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors placeholder:text-on-surface-variant/40 outline-none`}
                   placeholder="이메일 주소를 입력해주세요"
                 />
+                <p className="text-xs text-on-surface-variant/70 mt-1.5 leading-relaxed break-keep">
+                  * 네이버 등 일부 메일 서비스는 스팸 차단 정책으로 인해 수신이 지연되거나 불가능할 수 있으니, 되도록 <strong>지메일(Gmail)</strong> 주소 입력을 권장합니다.
+                </p>
                 {errors.email && <p className="text-error text-xs mt-1 font-semibold">{errors.email}</p>}
               </div>
 
