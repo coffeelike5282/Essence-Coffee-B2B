@@ -77,6 +77,7 @@ export const ContactForm: React.FC = () => {
             name: formData.name,
             phone: formData.phone,
             email: formData.email,
+            recipe_download_url: 'https://b2b.coffeelike5282.com/ireah_essence_coffee_regular_recipe.pdf',
           },
           publicKey
         );
