@@ -66,8 +66,22 @@ export const ContactForm: React.FC = () => {
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'your_template_id';
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'your_public_key';
 
-    // Send email using EmailJS SDK
-    import('@emailjs/browser')
+    const googleSheetUrl = 'https://script.google.com/macros/s/AKfycbykuPw4ihwl1XXQPUGc0T5mhyxPqKWXE6cpF_XJffJKBg00asTGHkxVKruXpKBn7b9-5w/exec';
+    
+    // 1. Google Sheets Webhook 발송
+    const sheetPromise = fetch(googleSheetUrl, {
+      method: 'POST',
+      mode: 'no-cors', // 구글 시트 CORS 에러 방지
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8', // no-cors 환경에서는 text/plain 권장
+      },
+      body: JSON.stringify(formData)
+    }).catch(error => {
+      console.error('Sheet update failed:', error);
+    });
+
+    // 2. EmailJS 발송
+    const emailPromise = import('@emailjs/browser')
       .then((emailjs) => {
         return emailjs.default.send(
           serviceId,
@@ -81,13 +95,16 @@ export const ContactForm: React.FC = () => {
           },
           publicKey
         );
-      })
+      });
+
+    // 두 작업이 모두 완료되면 성공 처리
+    Promise.all([sheetPromise, emailPromise])
       .then(() => {
         setIsSending(false);
         setIsSubmitted(true);
       })
       .catch((error) => {
-        console.error('Email sending failed:', error);
+        console.error('Form submission failed:', error);
         setIsSending(false);
         // Fallback to success page even if send fails to not block users, but log error.
         setIsSubmitted(true);
